@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.11.4, https://mobirise.com -->
+  <!-- Blockbot -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.11.4, mobirise.com">
@@ -42,6 +42,40 @@
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
+  
+  <!-- Messenger Chat -->
+  <script>
+  var div = document.createElement('div');
+  div.className = 'fb-customerchat';
+  div.setAttribute('page_id', '293157051312604');
+  div.setAttribute('ref', '');
+  document.body.appendChild(div);
+  window.fbMessengerPlugins = window.fbMessengerPlugins || {
+    init: function () {
+      FB.init({
+        appId            : '1678638095724206',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.3'
+      });
+    }, callable: []
+  };
+  window.fbAsyncInit = window.fbAsyncInit || function () {
+    window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+    window.fbMessengerPlugins.init();
+  };
+  setTimeout(function () {
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }, 0);
+</script>
+  
 </head>
 <body>
   <section class="menu cid-qSABgZZwfX" once="menu" id="menu1-e">
