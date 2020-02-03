@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.11.4, https://mobirise.com -->
+  <!-- https://getblockbot.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.11.4, mobirise.com">
+  <meta name="generator" content="Blockbot v1.0, getblockbot.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/2018-10-17-22.46.55-122x124.png" type="image/x-icon">
   <meta name="description" content="BlockBot website">
@@ -44,6 +44,32 @@
 
 </head>
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="293157051312604"
+  logged_in_greeting="Hi! Is there anything i can do for you?"
+  logged_out_greeting="Hi! Is there anything i can do for you?">
+      </div>
+  
   <section class="menu cid-qSABgZZwfX" once="menu" id="menu1-e">
 
     
